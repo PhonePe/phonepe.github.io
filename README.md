@@ -2,6 +2,6 @@
 
 Please check out these projects:
 
-- [Mantis](https://github.com/PhonePe/mantis) - Automated Discovery, Recon & Scan
+- [Mantis](/mantis) - Automated Discovery, Recon & Scan
 - [Mustang](https://github.com/PhonePe/mustang) - Boolean expression indexer
 - [Drove Container Orchestrator](/drove-orchestrator) - Distributed container orchestrator
