@@ -36,7 +36,16 @@ theme:
     # - navigation.expand
 plugins:
   - awesome-pages
-
+  - privacy:
+      enabled: true
+      cache: true
+      cache_dir: .cache/plugins/privacy
+      assets: true
+      assets_fetch: true
+      assets_fetch_dir: assets/external
+      links: true
+      links_noopener: true
+      
 markdown_extensions:
   - toc:
       permalink: true
