@@ -2,7 +2,7 @@
 
 Please check out these projects:
 
-- [Mantis](/mantis) - Automated Discovery, Recon & Scan
+- [Mantis](https://phonepe.github.io/mantis) - Automated Discovery, Recon & Scan
 - [Mustang](https://github.com/PhonePe/mustang) - Boolean expression indexer
-- [Drove Container Orchestrator](/drove-orchestrator) - Distributed container orchestrator
-- [Bonsai](https://github.com/PhonePe/bonsai) - Bonsai rule engine
+- [Drove Container Orchestrator](https://phonepe.github.io/drove-orchestrator) - Distributed container orchestrator
+- [Bonsai](https://phonepe.github.io/bonsai) - Bonsai rule engine
