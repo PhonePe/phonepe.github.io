@@ -4,17 +4,20 @@ on:
     branches:
       - main 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -23,11 +26,18 @@ jobs:
       - name: Setup Cache
         uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: zensical-${{ env.cache_id }}
           path: .cache
           restore-keys: |
-            mkdocs-material-
-      - name: Install mkdocs and plugins
-        run: pip install markdown-include pymdown-extensions mkdocs-material mkdocs-material-extensions mkdocs-awesome-pages-plugin mkdocs-glightbox mkdocs-get-deps mkdocs-glightbox mkdocs-nav-weight mkdocs-pdf-export-plugin
-      - name: Deploy Site
-        run: mkdocs gh-deploy --force
+            zensical-
+      - name: Install zensical and plugins
+        run: pip install zensical markdown-include pymdown-extensions mkdocs-awesome-pages-plugin mkdocs-glightbox mkdocs-nav-weight
+      - name: Build site
+        run: zensical build --clean
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

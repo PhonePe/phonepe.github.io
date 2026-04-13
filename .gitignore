@@ -1,2 +1,9 @@
+# IDE
 .idea
 .vscode
+
+# Zensical build output
+site/
+
+# Zensical cache
+.cache/
