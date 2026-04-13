@@ -1,0 +1,83 @@
+# ── Scalar project settings ──────────────────────────────────────────────────
+[project]
+site_name = "PhonePe Open Source"
+site_url  = "https://phonepe.github.io"
+
+# ── Theme ────────────────────────────────────────────────────────────────────
+[project.theme]
+logo = "assets/logo.png"
+features = [
+  "navigation.tracking",
+  "navigation.prune",
+  "content.code.copy",
+  "content.code.annotate",
+]
+
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+
+[project.theme.palette.toggle]
+icon = "material/brightness-auto"
+name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media  = "(prefers-color-scheme: light)"
+scheme = "default"
+
+[project.theme.palette.toggle]
+icon = "material/brightness-7"
+name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media  = "(prefers-color-scheme: dark)"
+scheme = "slate"
+
+[project.theme.palette.toggle]
+icon = "material/brightness-4"
+name = "Switch to system preference"
+
+# ── Plugins (search & minify are built-in, omitted) ──────────────────────────
+[project.plugins.awesome-pages]
+
+[project.plugins.privacy]
+enabled          = true
+cache            = true
+cache_dir        = ".cache/plugins/privacy"
+assets           = true
+assets_fetch     = true
+assets_fetch_dir = "assets/external"
+links            = true
+links_noopener   = true
+
+# ── Markdown extensions ──────────────────────────────────────────────────────
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.attr_list]
+
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.tables]
+
+[project.markdown_extensions."pymdownx.details"]
+
+[project.markdown_extensions."pymdownx.superfences"]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions."pymdownx.emoji"]
+emoji_index     = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions."markdown_include.include"]
+base_path = "snippets"
+
+[project.markdown_extensions."pymdownx.tabbed"]
+alternate_style = true

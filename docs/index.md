@@ -6,10 +6,44 @@ hide:
 
 # Welcome to PhonePe Open Source
 
-Please check out these projects:
+Explore our open-source projects built and maintained by PhonePe.
 
-- [Mantis](/mantis) - Automated Discovery, Recon & Scan
-- [Mustang](https://github.com/PhonePe/mustang) - Boolean expression indexer
-- [Drove Container Orchestrator](/drove-orchestrator) - Distributed container orchestrator
-- [Bonsai](/bonsai) - Bonsai rule engine
-- [Sentinel AI Agent Framework](/sentinel-ai) - Java Framework to build AI agents
+<div class="grid cards" markdown>
+
+-   :material-shield-search: **[Mantis](/mantis)**
+
+    ---
+
+    Automated discovery, recon & vulnerability scanning framework.
+
+-   :material-filter: **[Mustang](https://github.com/PhonePe/mustang)**
+
+    ---
+
+    High-performance boolean expression indexer for fast rule evaluation.
+
+-   :material-server: **[Drove Container Orchestrator](/drove-orchestrator)**
+
+    ---
+
+    Distributed container orchestrator for managing deployments at scale.
+
+-   :material-tree: **[Bonsai](/bonsai)**
+
+    ---
+
+    Lightweight and flexible rule engine for dynamic decision making.
+
+-   :material-robot: **[Sentinel AI Agent Framework](/sentinel-ai)**
+
+    ---
+
+    Java framework to build and orchestrate AI agents.
+
+-   :material-lock: **[Distributed Lock Manager (DLM)](/DLM)**
+
+    ---
+
+    Lightweight Java library for coordinating lock acquisition and release across distributed application instances.
+
+</div>
