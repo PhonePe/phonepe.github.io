@@ -48,6 +48,8 @@ Explore our open-source projects built and maintained by PhonePe.
 
 -   :material-microscope: **[Nika](/nika)**
 
+    ---
+
     Static application security testing tool with cross-file taint analysis.
 
 </div>
