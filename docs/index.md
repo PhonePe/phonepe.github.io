@@ -46,4 +46,10 @@ Explore our open-source projects built and maintained by PhonePe.
 
     Lightweight Java library for coordinating lock acquisition and release across distributed application instances.
 
+-   :material-microscope: **[Nika](/nika)**
+
+    ---
+
+    Static application security testing tool with cross-file taint analysis.
+
 </div>
