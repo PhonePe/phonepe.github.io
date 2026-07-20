@@ -58,4 +58,10 @@ Explore our open-source projects built and maintained by PhonePe.
 
     Automated DAST for Android Apps.
 
+-  :material-shield-check: **[Blanc](/blanc)**
+
+    ---
+
+    Threat modeling studio for identifying threats directly from design artifacts and engineering documentation.
+
 </div>
